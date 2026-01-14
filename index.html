@@ -1,0 +1,95 @@
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atendimento MP🪁 | Gestão 3º Distrito</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@200;300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <style>
+        body { 
+          font-family: 'Plus Jakarta Sans', sans-serif; 
+          scroll-behavior: smooth;
+        }
+        .glass {
+          background: rgba(255, 255, 255, 0.7);
+          backdrop-filter: blur(12px);
+          -webkit-backdrop-filter: blur(12px);
+          border: 1px solid rgba(255, 255, 255, 0.3);
+        }
+        .sidebar-active {
+          background: linear-gradient(135deg, #0ea5e9 0%, #2563eb 100%);
+          box-shadow: 0 10px 25px -5px rgba(14, 165, 233, 0.4);
+          transform: translateX(4px);
+        }
+        
+        /* Custom Animations */
+        @keyframes fadeIn {
+          from { opacity: 0; }
+          to { opacity: 1; }
+        }
+        @keyframes slideUp {
+          from { transform: translateY(20px); opacity: 0; }
+          to { transform: translateY(0); opacity: 1; }
+        }
+        @keyframes scaleIn {
+          from { transform: scale(0.95); opacity: 0; }
+          to { transform: scale(1); opacity: 1; }
+        }
+        @keyframes float {
+          0% { transform: translateY(0px); }
+          50% { transform: translateY(-10px); }
+          100% { transform: translateY(0px); }
+        }
+        @keyframes pulse-glow {
+          0% { box-shadow: 0 0 0 0 rgba(14, 165, 233, 0.4); }
+          70% { box-shadow: 0 0 0 10px rgba(14, 165, 233, 0); }
+          100% { box-shadow: 0 0 0 0 rgba(14, 165, 233, 0); }
+        }
+        
+        .animate-fade-in { animation: fadeIn 0.5s ease-out forwards; }
+        .animate-slide-up { animation: slideUp 0.5s cubic-bezier(0.16, 1, 0.3, 1) forwards; }
+        .animate-scale-in { animation: scaleIn 0.4s cubic-bezier(0.34, 1.56, 0.64, 1) forwards; }
+        .animate-float { animation: float 3s ease-in-out infinite; }
+        .pulse-glow { animation: pulse-glow 2s infinite; }
+        
+        .view-transition-enter {
+          animation: slideUp 0.4s ease-out;
+        }
+
+        /* Staggered entry for lists */
+        .stagger-1 { animation-delay: 0.1s; }
+        .stagger-2 { animation-delay: 0.2s; }
+        .stagger-3 { animation-delay: 0.3s; }
+        .stagger-4 { animation-delay: 0.4s; }
+
+        ::-webkit-scrollbar {
+          width: 6px;
+        }
+        ::-webkit-scrollbar-track {
+          background: transparent;
+        }
+        ::-webkit-scrollbar-thumb {
+          background: #e2e8f0;
+          border-radius: 10px;
+        }
+        ::-webkit-scrollbar-thumb:hover {
+          background: #cbd5e1;
+        }
+    </style>
+<script type="importmap">
+{
+  "imports": {
+    "react-dom/": "https://esm.sh/react-dom@^19.2.3/",
+    "lucide-react": "https://esm.sh/lucide-react@^0.562.0",
+    "react/": "https://esm.sh/react@^19.2.3/",
+    "react": "https://esm.sh/react@^19.2.3"
+  }
+}
+</script>
+</head>
+<body class="bg-[#F8FAFC] text-slate-900 antialiased">
+    <div id="root"></div>
+</body>
+</html>

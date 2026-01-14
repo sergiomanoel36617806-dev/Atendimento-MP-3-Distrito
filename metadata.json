@@ -1,0 +1,7 @@
+{
+  "name": "Atendimento MP🪁🪁",
+  "description": "Plataforma profissional de atendimento comunitário e serviços do Vereador Marquinho da Pipa, focada no 3º Distrito.",
+  "requestFramePermissions": [
+    "geolocation"
+  ]
+}
